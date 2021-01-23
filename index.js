@@ -1,12 +1,12 @@
 var fs = require('fs');
 var csv = require('fast-csv');
 
-const primaryFile = 'old.tasks.migration.opps.missing.csv';
-const primaryFieldPrimary = 'WHATID';
+const primaryFile = 'bounced-clicked.csv';
+const primaryFieldPrimary = 'Email address';
 
-const lookupFile = 'old.opps.to.new.sf.csv';
-const lookupFieldPrimary = 'FIMS_CRM_OPP_ID__C';
-const lookupFieldToAppend = 'NewOppID';
+const lookupFile = 'campaign.csv';
+const lookupFieldPrimary = 'EMAIL';
+const lookupFieldToAppend = 'ID';
 
 const outputFile = primaryFile;
 
